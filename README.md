@@ -30,13 +30,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    `Array#forEach()` doesn't return anything; `Array#map()` returns an array.
+
 2. What is the difference between a function and a method?
+
+    Methods are functions on objects.
 
 3. What is closure?
 
+    Overly fancy-sounding term that means you can only access variables within your current scope.
+
 4. Describe the four rules of the 'this' keyword.
 
+    - `this` === global, in global scope
+    - Attaching a function to an object implies that `this`, inside the function, refers to the object
+    - `this` inside a constructor is global until you call that constructor with `new`
+    - Except when used inside arrow functions, `this` can be reassigned using `call`, `bind` or `apply`
+
 5. Why do we need super() in an extended class?
+   Gotta call the parent's constructor in order to fully inherit props/methods.
 
 ## Project Set up
 
